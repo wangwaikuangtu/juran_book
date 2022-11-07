@@ -1,0 +1,35 @@
+* {margin: 0; padding: 0;}
+div ul li{
+	list-style: none;
+	float: left;
+}
+div ul li a{
+	text-decoration: none;
+	border-left: 1px; solid width: ;
+	display: block;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: pink;
+	color: black;
+}
+div ul li a:hover{
+	color: white;
+	background-color: orangered;
+}
+div ul li ol li{
+	float: none;
+	display: none;
+}
+div ul li ol li a{
+	border-top: 2px solid white;
+	display: block;
+	background-color: beige;
+}
+div ul li ol li a:hover{
+	background-color: beige;
+}
+div ul li:hover ol li{
+	display: block;
+}

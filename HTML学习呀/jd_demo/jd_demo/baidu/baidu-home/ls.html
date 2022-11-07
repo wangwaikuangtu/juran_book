@@ -1,0 +1,73 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <style>
+  /*01后代选择器：
+    p标签下所有span：p span{}    
+    p标签下第一层span：p>span{}
+    02伪类：
+    定义元素的特殊状态
+    a元素
+    鼠标悬停
+    访问过和未访问过的
+    获得焦点
+    语法：
+    选择器：伪类名{
+        }
+      例：
+      a:link{}  未访问的
+      a:visited{} 已经访问过的
+      a:hover{} 鼠标悬停的时候
+      a:active{}鼠标击中的状态*/
+.submenu{
+	/*display:none;
+	为了变得更丝滑
+	*/
+	height:0px;
+	overflow:hidden;
+	transition:1s;
+	background-color:#063;
+	}
+#menu>li:hover .submenu{
+	display:block;
+	height:100px;
+	}
+	ul{
+		width:300px;
+		list-style:none;/*去掉前面的圈和点*/
+		padding:0px;/*去掉前面的填充*/
+		background-color:#F00;
+		text-align:center;/*文字居中*/
+		font-size:30px;/*字体大小*/
+		color:white;/*字体颜色*/
+		line-height:50px;/*行高*/
+		}
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>无标题文档</title>
+  </head>
+  
+  <body>
+ <ul id="menu">
+  <li>人事管理
+    <ul class="submenu">
+    <li>添加人员信息</li>
+    <li>查询人员信息</li>
+    </ul>
+  </li>
+  <li>财务管理
+    <ul class="submenu">
+    <li>添加报销单据</li>
+    <li>查询月度单据</li>
+    </ul>
+  </li>
+  <li>销售管理
+    <ul class="submenu">
+    <li>添加订单信息</li>
+    <li>查询订单信息</li>
+    </ul>
+  </li>
+</ul>
+  
+  </body>
+  </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul {
+				list-style: none;
+				width: 500px;
+				padding: 0px;
+			}
+
+			ul img {
+				width: 400px;
+			}
+
+			.ul2 {
+				height: 0px;
+				overflow: hidden;
+				/* 溢出隐藏 */
+				transition: all 1s linear 0s;
+				/* 过渡属性 */
+			}
+
+			.ul1>li:hover .ul2 {
+				height: 300px;
+			}
+
+			p {
+				font-size: 15px;
+				color: deeppink;
+				font-weight: bold;
+				font-family: fantasy;
+				/* 		background-color: beige; */
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="ul1">
+			<li>
+				<p>任万万</p>
+				<ul class="ul2">
+					<img src="img/10.jpg" />
+				</ul>
+			</li>
+			<li>
+				<p>任万万</p>
+				<ul class="ul2">
+					<img src="img/11.jpg" />
+				</ul>
+			</li>
+			<li>
+				<p>任万万</p>
+				<ul class="ul2">
+					<img src="img/12.jpg" />
+				</ul>
+			</li>
+			<li>
+				<p>任万万</p>
+				<ul class="ul2">
+					<img src="img/13.jpg" />
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>百度一下，你就知道</title>
+		<link rel="shortcut icon" href="./static/img/baidu_icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="./static/css/index.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="banner">
+				<div class="left-bar">
+					<a href="#" class="left-item">新闻</a>
+					<a href="#" class="left-item">hao123</a>
+					<a href="#" class="left-item">地图</a>
+					<a href="#" class="left-item">视频</a>
+					<a href="#" class="left-item">贴吧</a>
+					<a href="#" class="left-item">网盘</a>
+					<div class="more">
+						<a href="#" class="left-item">更多</a>
+						<div class="more-item">
+							<div class="more-icon">
+								<a href="#">
+									<img src="./static/img/newfanyi.png" alt="">
+									<p>翻译</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newxueshuicon.png" alt="">
+									<p>学术</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newwenku.png" alt="">
+									<p>文库</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newbaike.png" alt="">
+									<p>百科</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newzhidao.png" alt="">
+									<p>知道</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newjiankang.png" alt="">
+									<p>健康</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/yingxiaoicon.png" alt="">
+									<p>营销推广</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newzhibo.png" alt="">
+									<p>直播</p>
+								</a>
+								<a href="#">
+									<img src="./static/img/newyinyue.png" alt="">
+									<p>音乐</p>
+								</a>
+							</div>
+							<a class="more-link" href="">查看全部百度产品></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="right-bar">
+					<li>
+						<a href="#" class="right-item">设置</a>
+						<ul>
+							<li><a href="">搜索设置</a></li>
+							<li><a href="">高级搜索</a></li>
+							<li><a href="">关闭预测</a></li>
+							<li><a href="">隐私设置</a></li>
+							<li><a href="">关闭热搜</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://passport.baidu.com/" id="login" class="right-item"> 登陆 </a>
+					</li>
+				</div>
+			</div>
+		</div>
+		<div class="pyscript">
+			
+		</div>
+		<div class="content">
+			<div class="baidu-logo">
+				<a href="#" title="百度一下,你就知道">
+					<a href="https://www.baidu.com/s?wd=%E7%99%BE%E5%BA%A6%E7%83%AD%E6%90%9C&" target="_blank">
+						<img src="./static/img/baidu_logo.png" alt="百度">
+					</a>
+			</div>
+			<div class="search">
+				<span class="search-bar">
+					<form action="https://www.baidu.com/s?wd=" method="get" target="_blank">
+						<input type="text" id="search-text" name="wd" class="input-bar">
+						<input type="submit" value="百度一下" class="search-btn">
+						<span class="photo-search"></span>
+					</form>
+				</span>
+			</div>
+			<!-- <div class="music">
+				<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+					src="static/music/IN-K、王忻辰 - 迷失幻境.mp3">
+					<!-- <object height="0" width="0" data="static/music/IN-K、王忻辰 - 迷失幻境.mp3">
+							</object> -->
+				</audio> -->
+			</div>
+			<div class="news-title">
+				<div class="news-header">
+					<p class="left">百度热搜
+						<img src="static/img/arrow.png" />
+					</p>
+					<p class="right">
+						<img src="static/img/refresh.png" />
+						换一换
+					</p>
+				</div>
+				<div class="news-list">
+					<a href="#">
+						<li>
+							<p>1</p>
+							<p class="news-text">今日天气</p>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<p>2</p>
+							<p class="news-text">皇家白石湾理工大学</p>
+							<span class="hot">热</span>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<p>3</p>
+							<p class="news-text">2022年结婚登记人数创37年新低</p>
+							<span class="hot">热</span>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<p id="seccol">4</p>
+							<p class="news-text">阿不衣呷娶了王冰冰？</p>
+							<span class="hot">热</span>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<p class="seccol">5</p>
+							<p class="news-text">唐山市公安局路北分局局长等人被查</p>
+							<span class="hot">爆</span>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<p class="seccol">6</p>
+							<p class="news-text">女子晚走一分钟被隔离在火锅店</p>
+						</li>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="vido">
+			<video id="myVideo1" width="500" height="200" controls>
+				<source src="static/vido/vido.mp4" type="video/mp4">
+				<source src="movie.ogg" type="video/ogg">
+		</div> -->
+		<div class="footer">
+			<div>
+				<span><a href="#">关于百度</a></span>
+				<span><a href="#">About Baidu</a></span>
+				<span><a href="#">使用百度前必读</a></span>
+				<span><a href="#">帮助中心</a></span>
+				<span><a href="#">京公网安备11000002000001号</a></span>
+				<span><a href="#">京ICP证030173号</a></span>
+				<span>药品医疗器械网络信息服务（京）网城平台信息备字（2021）第00159号</span>
+				<span class="record">医疗器械网络交易服务第三方平台备案凭证（京）网城平台备字（2020）第00002</span>
+			</div>
+		</div>
+	</body>
+</html>

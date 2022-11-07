@@ -1,0 +1,36 @@
+h1{
+	text-align: center;
+	color: DodgerBlue;
+}
+a{
+	text-decoration: none;	/*修饰文字*/
+	margin: 20px;	/*边缘*/
+	padding: 20px;	/*填充*/
+}
+body{
+	background-color: white;
+}
+.nh{
+	background-color: LightSkyBlue;
+	padding: 10px;
+	color: brown;
+}
+.nh img{
+	float: left;	/*浮点数往左*/
+	margin: 10px;
+	width: 200px;
+}
+.nh h2{
+	margin: 20px;
+}
+h2,ul{
+	color: black;
+}
+/*p{
+	width: 200px;
+	text-indent: 2en;
+}
+*/
+p{
+	text-indent: 2em;
+}

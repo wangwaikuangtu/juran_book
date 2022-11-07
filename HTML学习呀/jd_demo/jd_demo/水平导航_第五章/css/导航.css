@@ -1,0 +1,39 @@
+* {margin: 0; padding: 0;}
+div ul li{
+	list-style-type:none;
+	float: left;
+	border: 1px solid red;
+	background-color: black;
+}
+/*div ul li a{
+	text-decoration: none;
+	background-color: red; color: wheat;
+	border-left: 1px solid white;
+	display: block;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+*/
+div ul li a{
+	text-decoration: none;
+	background-color: goldenrod;
+	color: beige;
+	border-left:1px solid white;
+	display: block;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	
+}
+div ul .a_1{
+	border-left: none;
+}
+div ul a:hover{
+	color: black;
+	background-image: url(../image/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

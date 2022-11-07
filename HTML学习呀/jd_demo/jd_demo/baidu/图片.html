@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul {
+				list-style: none;
+				width: 100px;
+				padding: 0px;
+				background-color: fuchsia;
+				text-align: center;
+				font-size: 20px;
+				color: black;
+				line-height: 50px;
+			}
+
+			#university>li:hover .school {
+				height: 100px;
+			}
+
+			.school {
+				height: 0px;
+				overflow: hidden;
+				transition: 1s;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="university">
+			<li>北邮
+				<ul class="school">
+					<li>实验室</li>
+					<li>机房</li>
+				</ul>
+			</li>
+			<li>上交
+				<ul class="school">
+					<li>靶场</li>
+					<li>网站</li>
+				</ul>
+			</li>
+			<li>浙大
+				<ul class="school">
+					<li>图书馆</li>
+					<li>自习室</li>
+				</ul>
+			</li>
+		</ul>
+	
+	
+</>
+	</body>
+</html>

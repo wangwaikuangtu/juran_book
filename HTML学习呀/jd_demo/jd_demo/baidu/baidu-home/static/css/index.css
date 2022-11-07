@@ -1,0 +1,379 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* 页面顶端 */
+.header .banner {
+	font-size: 13px;
+	position: relative;/* 规定元素的定位类型 */
+	padding-left: 24px;
+	height: 60px;
+}
+
+.header .banner a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;/* 内联元素并且可以设置高度和宽度 */
+	margin-right: 31px;
+	margin-top: 19px;
+	position: relative;
+}
+
+.header .banner a:hover {
+	color: #7e99f8;
+}
+
+.left-bar {
+	position: absolute;
+}
+
+.left-bar .more {
+	display: inline-block;/* 内联元素并且可以设置高度和宽度 */
+}
+
+.left-bar .more a {
+	padding-bottom: 10px;/* 元素的下内边距底部空白 */
+}
+
+.left-bar .more .more-item {
+	display: none;
+	z-index: 1;
+	position: absolute;
+	width: 250px;
+	height: 310px;
+	left: 170px;
+	background-color: #fff;
+	border-radius: 15px;/* 元素添加圆角边框 */
+	box-shadow: 0 0 2px 3px #E1E2DF;
+	text-align: center;
+}
+
+.left-bar .more .more-item .more-icon a {
+	display: inline-block;/* 内联元素并且可以设置高度和宽度 */
+	text-align: center;
+	width: 76px;
+	height: 70px;
+	margin: 0;
+	padding: 16px 0 0 0;
+	position: relative;
+}
+
+.more-icon a:hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-color: #EFF1FB;
+	border-radius: 10px;
+}
+
+.more-icon a img {
+	width: 44px;
+	height: 44px;
+}
+
+.more-icon a p {
+	font-size: 13px;
+}
+
+.more-link {
+	color: #9195A3;
+	display: inline-block;
+	padding-left: 30px;
+	position: relative;
+}
+
+.more-item .more-link:hover {
+	color: #7e99f8;
+}
+
+.left-bar .more:hover .more-item {
+	display: block;
+}
+
+.right-bar {
+	position: absolute;
+	right: 0;
+}
+
+.right-bar li {
+	position: relative;
+	list-style: none;
+	float: left;
+}
+
+.right-bar li:first-child {
+	padding-bottom: 10px;
+}
+
+.right-bar li:first-child:hover ul {
+	display: block;
+}
+/* system */
+.right-bar li ul {
+	position: absolute;
+	display: none;
+	padding: 5px 0 5px 0;
+	top: 45px;
+	left: -25px;
+	width: 80px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 3px #E1E2DF;
+	background-color: #ffffff;
+	z-index: 999;
+}
+
+.right-bar li ul li {
+	padding: 0 0 0 9px;
+}
+
+.right-bar li ul li:first-child {
+	padding-bottom: 0px;
+}
+
+.right-bar li ul li a {
+	margin: 5px 0 !important;/* 最高优先级选择 */
+	padding: 0 5px;
+}
+
+.right-bar #login {
+	position: relative;
+	color: white;
+	margin-top: 15px;
+	padding: 2px 10px 2px 10px;
+	background-color: #4E71F2;
+	border: 1px solid #4E71F2;
+	border-radius: 20px;
+}
+
+.content {
+	position: relative;
+	text-align: center;
+}
+
+.content .baidu-logo img {
+	width: 270px;
+	height: 129px;
+}
+
+.content .search {
+	display: inline-block;
+	position: relative;
+}
+
+.content .search .search-bar {
+	position: relative;
+	left: -50px;
+}
+
+.search .search-bar .input-bar {
+	padding: 0 55px 0 20px;
+	width: 536px;
+	height: 45px;
+	border: 2px solid #cccccc;
+	float: left;
+	box-sizing: border-box;
+	border-radius: 10px 0 0 10px;
+}
+
+.search .search-bar .input-bar:hover {
+	border: 2px solid #a7aab5;
+}
+
+.search .search-bar .input-bar:focus {
+	outline: none;
+	border: 2px solid #a7aab5;
+}
+/* Search bar */
+.search .search-bar .search-btn {
+	height: 45px;
+	width: 108px;
+	position: absolute;
+	left: 250px;
+	display: inline-block;
+	background-color: #4E71F2;
+	color: white;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+}
+
+.search .search-bar .search-btn:hover {
+	background-color: #4662d9;
+}
+
+.search .search-bar .photo-search {
+	width: 38px;
+	height: 40px;
+	position: absolute;
+	display: inline-block;/* 内联元素并且可以设置高度和宽度 */
+	left: 200px;
+	background-color: transparent;/* 背景颜色为透明 */
+	background-image: url(../img/searchbar.png);
+	background-size: 90%;
+	background-repeat: no-repeat;/* 属性设置是否及如何重复背景图像 */
+	background-position: 3px -65px;
+	cursor: pointer;
+}
+
+.search .search-bar .photo-search:hover {
+	background-position: 3px -99px;
+}
+
+.news-title {
+	position: absolute;
+	padding-top: 1px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 654px;
+	font-size: 14px;
+}
+
+.news-title .news-header {
+	position: relative;
+	display: inline-block;
+	width: 654px;
+}
+
+.news-title .news-header p {
+	display: inline-block;
+}
+
+.left {
+	float: left;
+	padding-left: 10px;
+	cursor: pointer;/* 鼠标标签 */
+	font-weight: bold;
+}
+
+.left:hover {
+	color: #0000FF;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.left img {
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+
+.right {
+	float: right;
+	padding-right: 60px;
+}
+
+.right img {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.right:hover {
+	color: #0000FF;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.news-list {
+	column-count: 2;
+}
+
+.news-list a {
+	float: left;
+	padding: 10px;
+	padding-right: 40px;
+	text-decoration: none;
+}
+
+.news-list a li {
+	list-style: none;
+	color: black;
+}
+
+.news-list a li p {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.news-list a li p:first-child {
+	padding-right: 8px;
+	color: #e91212;
+}
+
+.news-list a li .seccol {
+	color: #a7aab5;
+}
+
+.news-list a li span {
+	display: inline-block;
+	color: white;
+	border-radius: 4px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+}
+
+.news-text:hover {
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+.news-list a:first-child span {
+	background-color: yellow;
+	color: white;
+}
+
+.hot {
+	background-color: #f60;
+	color: white;
+}
+
+/* 底部 */
+.footer {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.footer span {
+	text-decoration: none;
+	color: #BBBBBB;
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+.footer span a {
+	text-decoration: none;
+	color: #BBBBBB;
+	font-size: 12px;
+}
+
+.footer span a:hover {
+	color: black;
+}
+.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;	/* 垂直对齐相对长度 */
+	fill: currentColor;		/* 使用当前该元素所处环境的文字颜色 */
+	overflow: hidden;		/* 溢出隐藏 */
+}
+.record{
+	text-align: center;
+}
+.vido{
+	margin-left: 500px;
+	margin-top: 190px;
+}
+/* .music{
+	margin-left: 600px;
+	width: 0px;
+	height: 0px;
+} */
